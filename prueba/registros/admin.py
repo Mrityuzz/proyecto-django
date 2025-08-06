@@ -12,6 +12,9 @@ class AdministarModelo(admin.ModelAdmin):
     search_fields = ('matricula', 'nombre', 'carrera', 'turno') 
     date_hierarchy = 'created'
     list_filter = ('carrera', 'turno')
+    list_per_page = 2
+    list_display_links = ('matricula', 'nombre')
+    list_editable = ('turno',)
 
     def get_readonly_fields(self, request, obj = None):
         if request.user.groups.filter(name="Usuarios").exists():
@@ -35,9 +38,7 @@ class AdministrarComentariosContacto(admin.ModelAdmin):
     search_fields = ('id','created')
     date_hierarchy = 'created'
     readonly_fields = ('created', 'id', 'usuario')
-    list_per_page = 2
-    list_display_links = ('matricula', 'nombre')
-    list_editable = ('turno',)
+   
 
 admin.site.register(ComentarioContacto, AdministrarComentariosContacto)
 
