@@ -35,9 +35,9 @@ class AdministrarComentariosContacto(admin.ModelAdmin):
     search_fields = ('id','created')
     date_hierarchy = 'created'
     readonly_fields = ('created', 'id', 'usuario')
+    list_per_page = 2
+    list_display_links = ('matricula', 'nombre')
+    list_editable = ('turno',)
 
 admin.site.register(ComentarioContacto, AdministrarComentariosContacto)
 
-list_per_page=2
-list_display_links=('matricula', 'nombre')  
-list_editable = ('turno')  
