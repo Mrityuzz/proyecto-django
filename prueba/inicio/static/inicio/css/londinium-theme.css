@@ -504,9 +504,9 @@ blockquote {
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   background-color: rgba(0, 0, 0, 0.03);
-  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
-  -webkit-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
   -moz-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
+  -webkit-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -525,9 +525,9 @@ blockquote {
 .navbar-inverse .navbar-nav > .open > a:hover, 
 .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: rgba(0, 0, 0, 0.06);
-  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
-  -webkit-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
   -moz-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
+  -webkit-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05) inset, -1px 0 0 rgba(0, 0, 0, 0.05) inset;
 }
 
 .navbar-inverse .navbar-nav > li > a > .label {
@@ -865,9 +865,9 @@ blockquote {
     margin: 5px 5% 0 5%;
     background-color: #fff;
     border: 1px solid #ccc;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
   }
 
   .navbar-nav .open .dropdown-menu > li > a, 
@@ -883,9 +883,9 @@ blockquote {
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, 
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     background-color: #3A4B55;
-    box-shadow: 1px 0 0 #3A4B55, -1px 0 0 #3A4B55;
-    -webkit-box-shadow: 1px 0 0 #3A4B55, -1px 0 0 #3A4B55;
     -moz-box-shadow: 1px 0 0 #3A4B55, -1px 0 0 #3A4B55;
+    -webkit-box-shadow: 1px 0 0 #3A4B55, -1px 0 0 #3A4B55;
+    box-shadow: 1px 0 0 #3A4B55, -1px 0 0 #3A4B55;
   }
 
 }

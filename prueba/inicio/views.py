@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import redirect, render, HttpResponse
 
 # Create your views here.
 
@@ -38,4 +38,17 @@ def formulario(request):
 
 def ejemplo(request):
     return render(request, 'inicio/ejemplo.html')
+
+def registrar(request):
+    if request.method == 'POST':
+        form = ComentarioContactoForm(request.POST) # type: ignore
+        if form.is_valid(): #Si los datos recibidos son correctos
+            form.save() #inserta
+            
+            return redirect('Comentarios')        
+    form = ComentarioContactoForm() # type: ignore
+#Si algo sale mal se reenvian al formulario los datos ingresados
+    return render(request,'registros/contacto.html',{'form':form})
+
+
         
